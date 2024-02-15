@@ -1,0 +1,23 @@
+{
+    "name": "Demo",
+    "rootNamespace": "",
+    "references": [
+        "ME.BECS",
+        "ME.BECS.Features",
+        "ME.BECS.Physics",
+        "ME.BECS.Physics.Unity",
+        "Unity.Mathematics",
+        "Unity.Burst",
+        "ME.BECS.Transforms",
+        "ME.BECS.Views"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

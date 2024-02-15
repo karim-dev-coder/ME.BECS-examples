@@ -1,0 +1,3 @@
+[submodule "ME.BECS.Physics/Assets/ME.BECS"]
+	path = ME.BECS.Physics/Assets/ME.BECS
+	url = https://github.com/chromealex/ME.BECS.git

@@ -1,0 +1,146 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c47971b42c2144aeb6f0fb81f786410, type: 3}
+  m_Name: Demo-FeaturesGraph
+  m_EditorClassIdentifier: 
+  id: 34936
+  builtInGraph: 0
+  serializedNodes: []
+  nodes:
+  - rid: 428067634131238974
+  - rid: 428067634131238975
+  - rid: 428067634131238982
+  - rid: 428067634131238984
+  edges:
+  - GUID: 7a0cf295-ee4b-4b6a-ae52-1a85e4035850
+    owner: {fileID: 11400000}
+    inputNodeGUID: EndNode
+    outputNodeGUID: 14580108-7c7e-44c2-8c8d-a0135dd9aac8
+    inputFieldName: inputNodes
+    outputFieldName: outputNodes
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 677db626-91ff-4a62-bf37-9ec7b0cb449e
+    owner: {fileID: 11400000}
+    inputNodeGUID: 14580108-7c7e-44c2-8c8d-a0135dd9aac8
+    outputNodeGUID: 2ff2de9b-cda8-4459-a3ab-67bce7287ce4
+    inputFieldName: inputNodes
+    outputFieldName: outputNodes
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: f7339774-6c2c-41eb-8e09-9efec087749f
+    owner: {fileID: 11400000}
+    inputNodeGUID: 2ff2de9b-cda8-4459-a3ab-67bce7287ce4
+    outputNodeGUID: StartNode
+    inputFieldName: inputNodes
+    outputFieldName: output
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  groups: []
+  stackNodes: []
+  pinnedElements: []
+  exposedParameters: []
+  serializedParameterList: []
+  stickyNotes: []
+  nodeInspectorReference: {fileID: 0}
+  position: {x: 0, y: 168, z: 0}
+  scale: {x: 1, y: 1, z: 1}
+  isInnerGraph: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 428067634131238974
+      type: {class: StartNode, ns: ME.BECS.FeaturesGraph.Nodes, asm: ME.BECS.Features}
+      data:
+        nodeCustomName: 
+        GUID: StartNode
+        groupGUID: 
+        computeOrder: 0
+        position:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 100
+          height: 100
+        expanded: 1
+        enabled: 1
+        debug: 0
+        nodeLock: 0
+        customRuntimeSystemRoot: {fileID: 0}
+    - rid: 428067634131238975
+      type: {class: ExitNode, ns: ME.BECS.FeaturesGraph.Nodes, asm: ME.BECS.Features}
+      data:
+        nodeCustomName: 
+        GUID: EndNode
+        groupGUID: 
+        computeOrder: 3
+        position:
+          serializedVersion: 2
+          x: 976
+          y: -16
+          width: 100
+          height: 79.5
+        expanded: 1
+        enabled: 1
+        debug: 0
+        nodeLock: 0
+        customRuntimeSystemRoot: {fileID: 0}
+    - rid: 428067634131238982
+      type: {class: SystemNode, ns: ME.BECS.FeaturesGraph.Nodes, asm: ME.BECS.Features}
+      data:
+        nodeCustomName: 
+        GUID: 2ff2de9b-cda8-4459-a3ab-67bce7287ce4
+        groupGUID: 
+        computeOrder: 1
+        position:
+          serializedVersion: 2
+          x: 218
+          y: -16
+          width: 300
+          height: 106.5
+        expanded: 1
+        enabled: 1
+        debug: 0
+        nodeLock: 0
+        customRuntimeSystemRoot: {fileID: 0}
+        system:
+          rid: 428067634131238983
+    - rid: 428067634131238983
+      type: {class: SpawnDemoPhysicsSystem, ns: Demo, asm: Demo}
+      data:
+        cubePrefab:
+          viewSource:
+            providerId: 2
+            prefabId: 1
+        planePrefab:
+          viewSource:
+            providerId: 2
+            prefabId: 2
+    - rid: 428067634131238984
+      type: {class: GraphNode, ns: ME.BECS.FeaturesGraph.Nodes, asm: ME.BECS.Features}
+      data:
+        nodeCustomName: 
+        GUID: 14580108-7c7e-44c2-8c8d-a0135dd9aac8
+        groupGUID: 
+        computeOrder: 2
+        position:
+          serializedVersion: 2
+          x: 603
+          y: -26
+          width: 300
+          height: 126.5
+        expanded: 1
+        enabled: 1
+        debug: 0
+        nodeLock: 0
+        customRuntimeSystemRoot: {fileID: 0}
+        graphValue: {fileID: 11400000, guid: dae81305d31504261b5b9b9d0cc90e13, type: 2}
