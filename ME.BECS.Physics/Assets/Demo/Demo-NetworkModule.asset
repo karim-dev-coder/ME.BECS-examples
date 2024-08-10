@@ -12,3 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26b789d95c004cd2984c41a48a639a06, type: 3}
   m_Name: Demo-NetworkModule
   m_EditorClassIdentifier: 
+  properties:
+    tickTime: 33
+    maxFrameTime: 100
+    inputLag: 1
+    transport:
+      rid: 4748854736067231809
+    eventsStorageProperties:
+      capacity: 1000
+      capacityPerTick: 30
+      localPlayersCapacity: 1
+      bufferCapacity: 1000
+    statesStorageProperties:
+      capacity: 20
+      copyPerTick: 10
+    methodsStorageProperties:
+      capacity: 10
+  references:
+    version: 2
+    RefIds:
+    - rid: 4748854736067231809
+      type: {class: LocalTransport, ns: ME.BECS.Network, asm: ME.BECS.Network}
+      data: 
